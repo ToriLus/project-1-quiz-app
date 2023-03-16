@@ -1,0 +1,166 @@
+@import "./variable.css";
+@import "./fonts.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    90deg,
+    var(--background-color),
+    var(--accent-color)
+  );
+  font-family: kalam;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  align-items: center;
+  height: 60px;
+  box-shadow: 5px 12px 10px var(--accent-color);
+  font-style: italic;
+  font-size: 20px;
+}
+
+.question_menu {
+  border: solid 4px var(--accent-color);
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  flex-direction: column;
+  margin: 5%;
+  position: relative;
+}
+
+.question_h2 {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  padding: 2%;
+}
+
+.question_bookmark {
+  display: flex;
+  height: 15%;
+  align-self: flex-end;
+  padding: 0;
+  position: absolute;
+  top: -2%;
+}
+
+.tag_list {
+  display: flex;
+}
+
+.question_tag {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  background-color: var(--second-color);
+  padding: 1%;
+  border-radius: 30%;
+  font-size: 90%;
+}
+
+.question_button {
+  display: flex;
+  background-color: var(--second-color);
+  width: 20%;
+  height: 40px;
+  align-self: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5%;
+  border: none;
+  border: var(--second-color);
+  font-family: kalam;
+  border-style: outset;
+}
+
+.question_button:active {
+  border-style: inset;
+}
+
+.question_text_box {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.question_text {
+  padding: 2%;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-self: flex-end;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  height: 40px;
+}
+
+footer a {
+  display: flex;
+  height: 100%;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+
+/*profile code below*/
+
+.profile__main {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  position: relative;
+}
+
+.profile__menu {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  border: solid 4px var(--accent-color);
+}
+
+.profile__picture {
+  display: flex;
+  width: 20%;
+  margin: 5%;
+  margin-bottom: 0;
+}
+
+.profile__header {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+.profile__text {
+  display: flex;
+  padding: 5%;
+  text-align: justify;
+}
+
+.profile__image__box {
+  display: flex;
+  gap: 14%;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+.profile__image {
+  width: 10%;
+}
