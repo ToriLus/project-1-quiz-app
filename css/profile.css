@@ -1,0 +1,48 @@
+@import "./variable.css";
+@import "./fonts.css";
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  position: relative;
+}
+
+.profile__section__bio {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  border: solid 4px var(--accent-color);
+}
+
+.profile__section__picture {
+  display: flex;
+  width: 20%;
+  margin: 5%;
+}
+
+.profile__section__header {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+.profile__section__bio {
+  display: flex;
+  padding: 5%;
+  text-align: justify;
+}
+
+.profile__questions__box {
+  display: flex;
+  gap: 14%;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+.profile__questions__image {
+  width: 10%;
+}

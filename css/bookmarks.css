@@ -1,0 +1,85 @@
+@import "./variable.css";
+@import "./fonts.css";
+
+.card {
+  border: solid 4px var(--accent-color);
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  flex-direction: column;
+  margin: 5%;
+  position: relative;
+}
+
+.card__question {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  padding: 2%;
+}
+
+.card__bookmark {
+  display: flex;
+  height: 15%;
+  align-self: flex-end;
+  padding: 0;
+  position: absolute;
+  top: -2%;
+}
+
+.card__tag-section {
+  display: flex;
+}
+
+.card__tag {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  background-color: var(--second-color);
+  padding: 1%;
+  border-radius: 30%;
+  font-size: 90%;
+}
+
+.card__button {
+  display: flex;
+  background-color: var(--second-color);
+  width: 20%;
+  height: 40px;
+  align-self: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5%;
+  border: none;
+  border: var(--second-color);
+  font-family: poppins;
+  border-style: outset;
+}
+
+.card__button:active {
+  border-style: inset;
+}
+
+.card__text-box {
+  padding: 2%;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-self: flex-end;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  height: 40px;
+}
+
+footer a {
+  display: flex;
+  height: 100%;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}

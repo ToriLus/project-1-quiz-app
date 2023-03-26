@@ -1,0 +1,45 @@
+<!-- I will give you some feedback of your code form the quiz app.
+Index.html
+
+
+	• header, main & footer well done!
+	• There is no <tag> element in HTML. If you are able to find it in google let me know.
+	• Why are you nesting <p class="question_text"> in a section? We don’t need it. We try to nest only necessarily elements. If we don’t need it we don’t do it.
+	• Search how to use the button element. Inside this we DO NOT put a p element! See this doc.
+HTML button tag
+
+
+<button>: The Button element - HTML: HyperText Markup Language | MDN
+	• Non of your class name follow BEM.
+	• question_menu , give the impression that is a menu, not a card. A better name will be question-card or simple card . If for example we name it card the elements of this block should have the classes:
+		○ card__bookmark instead of question_bookmark
+		○ card__question instead of question_h2
+		○ card__tag-section instead of tag_list you are using a seaction tag, if you were using a ul tag it could me call card__tag-list
+		○ card__button instead of question_button
+	• Remember: the double __ indicate that is an element of the block. blockName__elementName
+Profile.html
+	• In here you did a better job with the BEM! 
+	
+	• The name are still a little off, but you got it better! A better naming will came with practice, so don’t worry. We will go through them, but good job! They reflect that you put though into them!
+	• BEM:
+	• profile__main → better just profile if not profile-main or profile-page this class name is from the main element. Lets say that this will be call profile
+	• profile__menu perfect better will be if it was profile__section the name menu, with think of an actual menu.
+	• profile__picture this is inside profile__menu so this should be profile__menu__picture
+	• profile__header following BEM → profile__menu__user-name the name header will give us the impression that it is a header and in that h3 we should display the user name.
+	• profile__text is not random text, we should put there a bio/ about me. following BEM → profile__menu__bio or profile__menu__about-me
+	• profile__image__box not correct. We need to choose something that describe this section. profile__counters may be? or profile__user-activity ?
+	• profile__image then this one is going to depend how you name the above one. If you call it profile__counters then this one should be profile__counters__image
+	• profile__settings is the one that you couldn’t finish.
+CSS
+	• We do NOT put all the css of 3 different pages in one file!
+	• If we take a minute, to analyse our designs before coding we can distinguish that:
+	• All 3 pages share the style of the header, main & footer
+	• index.html & bookmark.html share the hole style.
+	• profile.html main section has a different style that the other 2 pages.
+	• So we can conclude that we need the following files
+	• global.css → for the share styling (header, main & footer) we can include here our variables and any global styling.
+	• card.css → for the cards css, because we need the share style, we import global.css to this file. Then we link card.css to the pages index.html & bookmark.html
+	• profile.css → to style profile main because we need the share styling we import global.css. Then we link profile.css to our profile.hmtl
+Let me know if you have any questions.
+
+From <https://app.slack.com/client/T04RL2DPN59/D04RFL134HM>  -->

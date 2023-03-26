@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/bookmarks.css" />
     <link rel="stylesheet" href="../fonts/Kalam-Regular.ttf" />
     <title>Amazing Quiz App</title>
   </head>
@@ -14,29 +15,25 @@
     </header>
 
     <main>
-      <section class="question_menu">
+      <section class="card">
         <img
           src="../assets/bookmark_filled.png"
           alt="bookmark"
-          class="question_bookmark"
+          class="card__bookmark"
         />
 
-        <h2 class="question_h2">Question</h2>
+        <h2 class="card__question">Question</h2>
 
-        <section class="tag_list">
-          <tag class="question_tag">#html</tag>
-          <tag class="question_tag">#css</tag>
-          <tag class="question_tag">#javascript</tag>
+        <section class="card__tag-section">
+          <tag class="card__tag">#html</tag>
+          <tag class="card__tag">#css</tag>
+          <tag class="card__tag">#javascript</tag>
         </section>
 
-        <section class="quextion_text_box">
-          <p class="question_text">And this is the first question</p>
-        </section>
+        <p class="card__text-box">And this is the first question</p>
 
-        <button class="question_button">
-          Show answer!
-          <p hidden>this is the answer to the question</p>
-        </button>
+        <button class="card__button">Show answer!</button>
+        <p hidden class="card__answer">this is the answer to the question</p>
       </section>
     </main>
 
