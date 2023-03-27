@@ -16,20 +16,20 @@
 
     <main>
       <section class="card">
-        
-            <legend>creat a new question:</legend>
+        <form data-js="form__form">
+            <fieldset><legend>creat a new question:</legend>
 
             <label for "question">enter your question</label>
-            <textarea name = 'question' id = 'question' type="textarea" rows='10' cols="20">text</textarea>
+            <textarea name = 'question' id = 'question' type="textarea" rows='10' cols="20" data-js="form__question-text">text</textarea>
 
             <label for "answer">answer to your question</label>
-            <textarea name = 'answer' id = 'answer' type="textarea" rows='10' cols="20">text</textarea>
+            <textarea name = 'answer' id = 'answer' type="textarea" rows='10' cols="20" data-js="form__answer-text">text</textarea>
 
             <label for 'tag'>what tags apply?</label>
-            <input type="text" id="tag">
+            <input type="text" id="tag" data-js="form__tags">
 
-            <button type="submit">submit</button>
-
+            <input type="submit" data-js="form__submit-button"></input>
+</fieldset>
         </form>
 
         
@@ -41,11 +41,15 @@
         ><img src="../assets/home.png" alt="home link"
       /></a>
       <a href="../pages/bookmarks.html"
-        ><img src="../assets/bookmark_filled.png" alt="bookmarks link"
+        ><img src="../assets/bookmark_transparent.png" alt="bookmarks link"
+      /></a>
+         <a href="../pages/form.html"
+        ><img src="../assets/question.png" alt="form link"
       /></a>
       <a href="../pages/profile.html"
         ><img src="../assets/profile.png" alt="profile link"
       /></a>
+
     </footer>
   </body>
 </html>

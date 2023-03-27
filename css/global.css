@@ -6,6 +6,15 @@
   margin: 0;
 }
 
+.dark-mode {
+  --primary-color: #8889d4;
+  --second-color: #c8dce4;
+  --accent-color: #a3afd4f8;
+  --background-color: #b5d0df;
+  --font-color: #743232;
+  --link-color: green;
+}
+
 body {
   background-image: linear-gradient(
     0deg,
@@ -27,16 +36,13 @@ header {
 }
 
 footer {
-  position: sticky;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
-  align-content: center;
-  align-self: flex-end;
   justify-content: space-around;
   background-color: var(--primary-color);
   height: 40px;
-  margin-top: 20px;
 }
 
 footer a {
