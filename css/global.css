@@ -27,7 +27,7 @@ header {
 }
 
 footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -36,6 +36,7 @@ footer {
   justify-content: space-around;
   background-color: var(--primary-color);
   height: 40px;
+  margin-top: 20px;
 }
 
 footer a {
