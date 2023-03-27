@@ -1,0 +1,46 @@
+@import "./variable.css";
+@import "./fonts.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    0deg,
+    var(--background-color),
+    var(--accent-color)
+  );
+  font-family: poppins;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  align-items: center;
+  height: 60px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-self: flex-end;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  height: 40px;
+}
+
+footer a {
+  display: flex;
+  height: 100%;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
