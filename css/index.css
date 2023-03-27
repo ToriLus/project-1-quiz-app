@@ -132,3 +132,14 @@ footer a {
 .profile__image {
   width: 10%;
 }
+
+.card__answer {
+  display: flex;
+  align-self: center;
+  margin-bottom: 2%;
+  visibility: hidden;
+}
+
+.card__answer__visibility {
+  visibility: visible;
+}
