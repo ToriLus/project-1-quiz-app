@@ -1,12 +1,47 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 2%;
 }
 
 .form__form {
-  display: row;
-  flex-direction: column;
+  justify-self: stretch;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+  justify-items: center;
+}
+
+.form__question-text-characters {
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+}
+
+.form__answer-text-characters {
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+}
+
+.form__question-text {
+  display: flex;
+  width: 100%;
+  font-size: larger;
+}
+
+.form__answer-text {
+  display: flex;
+  width: 100%;
+  font-size: larger;
+}
+
+.form__submit-button:active {
+  font-size: larger;
+  background-color: chartreuse;
+  box-shadow: red 5px 5px 5px;
+}
+
+.form__submit-button {
+  transition: 0.2s;
+  display: flex;
+  margin: 2%;
 }

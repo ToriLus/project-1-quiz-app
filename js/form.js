@@ -11,11 +11,25 @@ let answerCharacters = document.querySelector(
 );
 console.log(questionText, answerText, tagsText, submitButton, form);
 
+let newSection = document.createElement("section");
 let newQuestion = document.createElement("section");
+let newImg = document.createElement("img");
+let newH2 = document.createElement("h2");
+let newP = document.createElement("p");
+let newButton = document.createElement("button");
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   console.log(questionText.value, answerText.value, tagsText.Value);
+
+//   newSection.append(newQuestion);
+//   form.append(newSection);
+
+// });
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  console.log(questionText.value, answerText.value, tagsText.Value);
+
   form.append(newQuestion);
 
   newQuestion.innerHTML = `
@@ -33,11 +47,13 @@ form.addEventListener("submit", (event) => {
 
         </section>
 
-        <section class="card__text-box">>${questionText.value}</section>
+        <section class="card__text-box">${questionText.value}</section>
 
         <button class="card__button">Show answer!</button>
         <p class="card__answer">${answerText.value}</p>
-      </section>`;
+      </section>
+      
+      <script src="../js/index.js" defer></script>`;
 });
 
 questionText.addEventListener("input", () => {
@@ -51,45 +67,45 @@ answerText.addEventListener("input", () => {
 });
 /////////////////////////////////////////////////////
 
-let bookmark = document.getElementsByClassName("card__bookmark");
+// let bookmark = document.getElementsByClassName("card__bookmark");
 
-// console.log(bookmark);
-// bookmark[0].addEventListener("click", () => {
-//   if (bookmark[0].src.includes("bookmark_filled") == true) {
-//     bookmark[0].src = "../assets/bookmark.png ";
-//   } else {
-//     bookmark[0].src = "../assets/bookmark_filled.png";
-//   }
-//   console.log(bookmark[0].src);
-// });
+// // console.log(bookmark);
+// // bookmark[0].addEventListener("click", () => {
+// //   if (bookmark[0].src.includes("bookmark_filled") == true) {
+// //     bookmark[0].src = "../assets/bookmark.png ";
+// //   } else {
+// //     bookmark[0].src = "../assets/bookmark_filled.png";
+// //   }
+// //   console.log(bookmark[0].src);
+// // });
 
-let answerButton = document.getElementsByClassName("card__button");
-let answerTexts = document.getElementsByClassName("card__answer");
+// let answerButton = document.getElementsByClassName("card__button");
+// let answerTexts = document.getElementsByClassName("card__answer");
 
-console.log(answerButton, answerText);
+// console.log(answerButton, answerText);
 
-// for (i = 0; i < answerButton.length; i++) {
-//   console.log(i);
+// // for (i = 0; i < answerButton.length; i++) {
+// //   console.log(i);
 
-//   answerButton[i].addEventListener("click", () => {
-//     console.log("i is now:", i);
-//     let x = i;
-//     // answerText[x].classList.toggle("card__answer__visibility");
-//     console.log("hahahaha");
-//     console.log("x is now", x);
+// //   answerButton[i].addEventListener("click", () => {
+// //     console.log("i is now:", i);
+// //     let x = i;
+// //     // answerText[x].classList.toggle("card__answer__visibility");
+// //     console.log("hahahaha");
+// //     console.log("x is now", x);
+// //   });
+// // }
+
+// [...answerButton].forEach((button, indexOfButton) => {
+//   // console.log(button, indexOfButton);
+//   button.addEventListener("click", (event) => {
+//     // console.log(event.target, indexOfButton);
+//     // console.log(answerText);
+//     answerTexts[indexOfButton].classList.toggle("card__answer__visibility");
+//     if (answerButton[indexOfButton].innerText == "Show answer!") {
+//       answerButton[indexOfButton].innerText = "Hide answer";
+//     } else if (answerButton[indexOfButton].innerText == "Hide answer") {
+//       answerButton[indexOfButton].innerText = "Show answer!";
+//     }
 //   });
-// }
-
-[...answerButton].forEach((button, indexOfButton) => {
-  // console.log(button, indexOfButton);
-  button.addEventListener("click", (event) => {
-    // console.log(event.target, indexOfButton);
-    // console.log(answerText);
-    answerTexts[indexOfButton].classList.toggle("card__answer__visibility");
-    if (answerButton[indexOfButton].innerText == "Show answer!") {
-      answerButton[indexOfButton].innerText = "Hide answer";
-    } else if (answerButton[indexOfButton].innerText == "Hide answer") {
-      answerButton[indexOfButton].innerText = "Show answer!";
-    }
-  });
-});
+// });

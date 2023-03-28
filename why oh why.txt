@@ -1,0 +1,21 @@
+ <section class="card">
+        <img
+          src="../assets/bookmark.png"
+          alt="bookmark"
+          class="card__bookmark"
+        />
+
+        <h2 class="card__question">Your Question</h2>
+
+        <section class="card__tag-section">
+          <p class="card__tag">${tagsText.value}</p>
+
+        </section>
+
+        <section class="card__text-box">>${questionText.value}</section>
+
+        <button class="card__button">Show answer!</button>
+        <p class="card__answer">${answerText.value}</p>
+      </section>
+      
+      <script src="../js/index.js" defer></script>`;
