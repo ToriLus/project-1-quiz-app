@@ -65,73 +65,7 @@
   text-align: center;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  align-content: center;
-  align-self: flex-end;
-  justify-content: space-around;
-  background-color: var(--primary-color);
-  height: 40px;
-}
-
-footer a {
-  display: flex;
-  height: 100%;
-  margin-top: 5px;
-  padding-bottom: 10px;
-}
-
 /*profile code below*/
-
-.profile__main {
-  display: flex;
-  flex-direction: column;
-  margin: 5%;
-  position: relative;
-}
-
-.profile__menu {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--primary-color);
-  border: solid 4px var(--accent-color);
-}
-
-.profile__picture {
-  display: flex;
-  width: 20%;
-  margin: 5%;
-  margin-bottom: 0;
-}
-
-.profile__header {
-  display: flex;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  justify-self: center;
-  align-self: center;
-}
-
-.profile__text {
-  display: flex;
-  padding: 5%;
-  text-align: justify;
-}
-
-.profile__image__box {
-  display: flex;
-  gap: 14%;
-  margin-top: 5%;
-  justify-content: center;
-}
-
-.profile__image {
-  width: 10%;
-}
 
 .card__answer {
   display: flex;
