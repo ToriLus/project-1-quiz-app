@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/form.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../fonts/Kalam-Regular.ttf" /><script src="../js/form.js" defer></script>
     
     <title>Amazing Quiz App</title>
@@ -20,18 +21,19 @@
         <form data-js="form__form" class="form__form">
             <fieldset><legend>creat a new question:</legend>
 
-            <label for "question">enter your question</label>
-            <textarea name = 'question' id = 'question' type="textarea" rows='10' cols="20" data-js="form__question-text"></textarea>
-            <p data-js="form__question-text-characters">characters left: 300</p>
+            <label for="question" class="form__question-text">enter your question</label><p></p>
+            <textarea name = 'question' id = 'question' type="textarea" rows='5' cols="30" data-js="form__question-text" class="form__question-text" maxlength="300"></textarea>
+            <p data-js="form__question-text-characters" class = "form__question-text-characters">characters left: 300</p>
 
-            <label for "answer">answer to your question</label>
-            <textarea name = 'answer' id = 'answer' type="textarea" rows='10' cols="20" data-js="form__answer-text"></textarea>
-            <p data-js="form__answer-text-characters">characters left: 400</p>
+            <label for="answer" class="form__answer-text">answer to your question</label><p></p>
+            <textarea name = 'answer' id = 'answer' type="textarea" rows='10' cols="30" data-js="form__answer-text" class="form__answer-text" maxlength="400"></textarea>
+            <p data-js="form__answer-text-characters"
+            class = "form__answer-text-characters">characters left: 400</p>
 
-            <label for 'tag'>what tags apply?</label>
+            <label for='tag'>what tags apply?</label><p></p>
             <input type="text" id="tag" data-js="form__tags">
-
-            <input type="submit" data-js="form__submit-button"></input>
+              <p></p>
+            <input type="submit" data-js="form__submit-button" class = "form__submit-button"></input>
 </fieldset>
         </form>
 
